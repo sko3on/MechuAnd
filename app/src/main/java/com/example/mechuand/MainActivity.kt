@@ -9,5 +9,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // 초기 테스트하는중 커밋테스트
         // 도현호 커밋
+        // 12
     }
 }
