@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".storeui.StoreActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,10 +12,10 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="사용자 로그인"
+            android:text="사업자 로그인"
             android:textAlignment="center"
             android:textSize="40sp" />
 
@@ -25,18 +25,18 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editLoginTextId"
+                android:id="@+id/editLoginText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="100"
+                android:ems="10"
                 android:hint="ID"
                 android:inputType="text" />
 
             <EditText
-                android:id="@+id/editLoginTextPw"
+                android:id="@+id/editPasswordText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="100"
+                android:ems="10"
                 android:hint="PASSWORD"
                 android:inputType="textPassword" />
 
@@ -61,11 +61,10 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btnSCh"
+                android:id="@+id/btnUCh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="storeClick" />
-
+                android:text="userClick" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

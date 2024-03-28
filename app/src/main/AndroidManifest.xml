@@ -13,6 +13,42 @@
         android:theme="@style/Theme.MechuAnd"
         tools:targetApi="31">
         <activity
+            android:name=".storeui.MenudesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".storeui.UpdateMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".storeui.StoreDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".storeui.StoreRegistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".storeui.StoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userui.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userui.ReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userui.ResActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userui.BattleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userui.PickActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userui.MechuHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userui.UserRegistActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
