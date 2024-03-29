@@ -34,9 +34,6 @@
             android:name=".userui.ReservationActivity"
             android:exported="false" />
         <activity
-            android:name=".userui.ResActivity"
-            android:exported="false" />
-        <activity
             android:name=".userui.BattleActivity"
             android:exported="false" />
         <activity
@@ -58,5 +55,6 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
 </manifest>
