@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.example.mechuand.databinding.ActivityMainBinding
+import com.example.mechuand.sqltest.TestActivity
 import com.example.mechuand.storeui.StoreActivity
 import com.example.mechuand.userui.MechuHomeActivity
 import com.example.mechuand.userui.UserRegistActivity
@@ -43,6 +44,13 @@ class MainActivity : AppCompatActivity(){
         // 유저 로그인창 > 사업자 로그인 창으로 이동
         binding.btnSCh.setOnClickListener {
             var intent = Intent(applicationContext, StoreActivity::class.java)
+            startActivity(intent)
+        }
+
+        // TestPage
+        val btnTestP =  findViewById<Button>(R.id.btnTestP)
+        binding.btnTestP.setOnClickListener {
+            var intent = Intent(applicationContext, TestActivity::class.java)
             startActivity(intent)
         }
     }

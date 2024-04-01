@@ -66,6 +66,12 @@
                 android:layout_height="wrap_content"
                 android:text="storeClick" />
 
+            <Button
+                android:id="@+id/btnTestP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SQLTestPage" />
+
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

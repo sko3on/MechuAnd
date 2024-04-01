@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "493359256459",
+    "project_id": "mechumobile",
+    "storage_bucket": "mechumobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493359256459:android:f25909c4233d92aaad558e",
+        "android_client_info": {
+          "package_name": "com.example.mechuand"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeFSikRdycHTFw44qXGm2VHCrpyvSHywo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
