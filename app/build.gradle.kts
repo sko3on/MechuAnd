@@ -35,6 +35,7 @@ android {
         jvmTarget = "1.8"
     }
     viewBinding{enable = true}
+
 }
 
 dependencies {
@@ -52,4 +53,9 @@ dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
     implementation("com.google.firebase:firebase-analytics")
+
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.google.code.gson:gson:2.8.6")
+    implementation ("com.squareup.okhttp3:logging-interceptor:3.11.0")
 }

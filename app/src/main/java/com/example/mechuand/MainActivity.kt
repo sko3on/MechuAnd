@@ -1,10 +1,9 @@
 package com.example.mechuand
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.example.mechuand.databinding.ActivityMainBinding
 import com.example.mechuand.sqltest.TestActivity
 import com.example.mechuand.storeui.StoreActivity
