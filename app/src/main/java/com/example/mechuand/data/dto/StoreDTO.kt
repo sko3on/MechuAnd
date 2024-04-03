@@ -13,9 +13,4 @@ data class StoreDTO(
     var businessNum: String? = null,
 
 
-//    var storeDetailDTO: List<StoreDetailDTO>? = null,
-//    var storeMenuDTO: List<StoreMenuDTO>? = null,
-//    var reservationDTO: List<ReservationDTO>? = null,
-//    var reviewDTO: List<ReviewDTO>? = null
-
 ) : Parcelable

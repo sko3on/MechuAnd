@@ -1,4 +1,4 @@
-package com.example.mechuand.data.dao
+package com.example.mechuand.data.dao.handler
 
 import android.annotation.SuppressLint
 import android.content.ContentValues
@@ -6,6 +6,7 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import com.example.ex03sqlite.vo.MemberVO
+import com.example.mechuand.data.dao.DbOpenHelper
 
 class DbSqlHandler private constructor(ctx:Context){
     private val openHelper: DbOpenHelper = DbOpenHelper(ctx, "user.db", null, 1)

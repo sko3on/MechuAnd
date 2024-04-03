@@ -15,7 +15,4 @@ data class UserDTO(
     var uMobile: String? = null,
 
 
-//    var reservationDTO: List<ReservationDTO>? = null,
-//    var reviewDTO: List<ReviewDTO>? = null,
-//    var reMenuOrderDTO: List<ReMenuOrderDTO>? = null
 ) : Parcelable
