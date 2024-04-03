@@ -13,6 +13,4 @@ data class UserDTO(
     var uBirth: Long? = null,
     var uGender: String? = null,
     var uMobile: String? = null,
-
-
 ) : Parcelable

@@ -10,6 +10,5 @@ data class StoreMenuDTO(
     var mPrice: String? = null,
     var description: String? = null,
 
-
     var sNum: Long? = null
 ) : Parcelable

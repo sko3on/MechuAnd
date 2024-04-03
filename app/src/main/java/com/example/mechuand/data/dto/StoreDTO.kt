@@ -11,6 +11,4 @@ data class StoreDTO(
     var sName: String? = null,
     var sMobile: String? = null,
     var businessNum: String? = null,
-
-
 ) : Parcelable
