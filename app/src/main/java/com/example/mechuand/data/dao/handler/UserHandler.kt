@@ -27,7 +27,6 @@ class UserHandler private constructor(ctx: Context){
         val values = ContentValues()
         values.put("uId",dto.uId)
         values.put("uBirth",dto.uBirth)
-        values.put("uNum",dto.uNum)
         values.put("uMobile",dto.uMobile)
         values.put("uGender",dto.uGender)
         values.put("uEmail",dto.uEmail)
@@ -53,12 +52,12 @@ class UserHandler private constructor(ctx: Context){
         sqLiteDatabase.update("user", values, "_uNum=?", arrayOf(dto.uNum.toString()))
     }
 
-    fun delete(uNum: Int): Unit {
+    fun delete(uNum: Long): Unit {
         sqLiteDatabase.delete("user", "_uNum=?", arrayOf(uNum.toString()))
     }
 
     @SuppressLint("Range")
-    fun get(uNum: Int): UserDTO? {
+    fun get(uNum: Long): UserDTO? {
         val cursor: Cursor = sqLiteDatabase.query(
             "user", null, "_uNum=?", arrayOf(uNum.toString()), null, null, null
         )
