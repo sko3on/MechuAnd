@@ -72,6 +72,12 @@
                 android:layout_height="wrap_content"
                 android:text="SQLTestPage" />
 
+            <Button
+                android:id="@+id/btnRetroTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
