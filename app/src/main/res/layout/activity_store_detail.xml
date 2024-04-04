@@ -12,12 +12,22 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/textViewDetailTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="사업장 상세정보"
             android:textAlignment="center"
             android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/sId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용자 아이디:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,10 +35,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/categoryTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="음식카테고리" />
+                android:text="카테고리" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,42 +46,42 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkBox3"
+                    android:id="@+id/checkBoxKorean"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="한식" />
 
                 <CheckBox
-                    android:id="@+id/checkBox4"
+                    android:id="@+id/checkBoxWestern"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="양식" />
 
                 <CheckBox
-                    android:id="@+id/checkBox5"
+                    android:id="@+id/checkBoxChinese"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="중식" />
 
                 <CheckBox
-                    android:id="@+id/checkBox6"
+                    android:id="@+id/checkBoxJapanese"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="일식" />
 
                 <CheckBox
-                    android:id="@+id/checkBox7"
+                    android:id="@+id/checkBoxSnack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="분식" />
 
                 <CheckBox
-                    android:id="@+id/checkBox8"
+                    android:id="@+id/checkBoxCafe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -79,60 +89,61 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/textViewOffDay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="휴무일" />
 
             <RadioGroup
+                android:id="@+id/offDayTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/radioButton7"
+                    android:id="@+id/radioButtonMon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="월" />
 
                 <RadioButton
-                    android:id="@+id/radioButton8"
+                    android:id="@+id/radioButtonTue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="화" />
 
                 <RadioButton
-                    android:id="@+id/radioButton10"
+                    android:id="@+id/radioButtonWed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="수" />
 
                 <RadioButton
-                    android:id="@+id/radioButton11"
+                    android:id="@+id/radioButtonThu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="목" />
 
                 <RadioButton
-                    android:id="@+id/radioButton12"
+                    android:id="@+id/radioButtonFri"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="금" />
 
                 <RadioButton
-                    android:id="@+id/radioButton13"
+                    android:id="@+id/radioButtonSat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="토" />
 
                 <RadioButton
-                    android:id="@+id/radioButton14"
+                    android:id="@+id/radioButtonSun"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -140,16 +151,29 @@
             </RadioGroup>
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/premiumTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="광고 여부" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
             <Button
                 android:id="@+id/btnDetailEnd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="입력 완료" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="취소" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
