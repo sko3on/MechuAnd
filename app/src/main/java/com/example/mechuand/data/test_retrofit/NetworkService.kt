@@ -5,7 +5,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface NetworkService {
-    @GET("/v2/everything")
+    @GET("/api/users")
     fun getList(
         @Query("q") q: String?,
         @Query("apiKey") apiKey: String?,

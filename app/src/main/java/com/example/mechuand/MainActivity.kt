@@ -1,4 +1,3 @@
-
 package com.example.mechuand
 
 import android.content.Intent
@@ -28,19 +27,19 @@ class MainActivity : AppCompatActivity(){
         val btnCh = findViewById<Button>(R.id.btnSCh)
 
         // 버튼클릭시 실행동작
-
+        
         // 회원가입 이동
         binding.btnReg.setOnClickListener {
             var intent = Intent(applicationContext, UserRegistActivity::class.java)
             startActivity(intent)
         }
-
+        
         // 로그인 아이디 비밀번호 유사성 검사 후 true => HomeActivity 이동 false => 다시
         binding.btnLogin.setOnClickListener {
             var intent = Intent(applicationContext, MechuHomeActivity::class.java)
             startActivity(intent)
         }
-
+        
         // 유저 로그인창 > 사업자 로그인 창으로 이동
         binding.btnSCh.setOnClickListener {
             var intent = Intent(applicationContext, StoreActivity::class.java)

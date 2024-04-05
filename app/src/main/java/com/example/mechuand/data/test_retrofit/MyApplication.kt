@@ -1,17 +1,14 @@
 package com.example.mechuand.data.test_retrofit
 
 import android.app.Application
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.GET
-import retrofit2.http.Query
 
 class MyApplication : Application() {
     companion object {
         var networkService: NetworkService
 
-        val BASE_URL = "http://localhost:8029/api/users"
+        val BASE_URL = "http://localhost:8029/"
 
         init {
             networkService = retrofit.create(NetworkService::class.java)
